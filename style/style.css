@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --shadowlightblueBG: hsl(224 100% 92%);
+  --black: black;
+  --lightblueBG: hsl(225 100% 94%);
+  --colorButton: hsl(245 75% 52%);
+  --colorOrder: hsl(228 14% 57%);
+  --hovercolorButton: hsl(245 83% 68%);
+  --hovercolorOrder: hsl(224 16% 36%);
+}
+
+section {
+  background-color: var(--lightblueBG);
+}
+
+svg {
+  aspect-ratio: 1440/960;
+}
