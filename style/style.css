@@ -14,18 +14,16 @@
 
 section {
   background-color: var(--lightblueBG);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
-
 .pattern {
-  aspect-ratio: 1440/960;
-  display: flex;
-  width: 100%;
-  height: 100em;
+  width: 100vw;
+  height: 50vh;
 }
 
-.hero {
-  background: url(/images/heroIcon\ 1.jpg);
-  position: relative;
-  height: 13em;
-  display: flex;
+.hero-img {
+  background-repeat: no-repeat;
+  flex: 50%;
 }
