@@ -10,11 +10,12 @@
   --colorOrder: hsl(228 14% 57%);
   --hovercolorButton: hsl(245 83% 68%);
   --hovercolorOrder: hsl(224 16% 36%);
+  --cardbackground: white;
+  --imagecurve: 15px;
 }
 
 section {
   background-color: var(--lightblueBG);
-  display: flex;
   width: 100vw;
   height: 100vh;
 }
@@ -23,7 +24,24 @@ section {
   height: 50vh;
 }
 
+.hero {
+  margin: 0;
+  display: grid;
+}
+
+.card {
+  background-color: var(--cardbackground);
+  height: 70vh;
+  width: 37vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .hero-img {
   background-repeat: no-repeat;
-  flex: 50%;
+  height: 25vh;
+  width: 37vw;
+  border-top-left-radius: var(--imagecurve);
+  border-top-right-radius: var(--imagecurve);
 }
