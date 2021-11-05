@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 :root {
   --shadowlightblueBG: hsl(224 100% 92%);
-  --black: black;
+  --fontcolor: black;
   --lightblueBG: hsl(225 100% 94%);
   --colorButton: hsl(245 75% 52%);
   --colorOrder: hsl(228 14% 57%);
@@ -18,30 +22,40 @@ section {
   background-color: var(--lightblueBG);
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 .pattern {
   width: 100vw;
   height: 50vh;
+  z-index: 1;
 }
 
-.hero {
-  margin: 0;
-  display: grid;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card {
   background-color: var(--cardbackground);
-  height: 70vh;
-  width: 37vw;
+  height: 75vh;
+  width: 25vw;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-radius: var(--imagecurve);
+  transform: translateY(-17em);
+  z-index: 2;
 }
 
 .hero-img {
+  display: grid;
   background-repeat: no-repeat;
-  height: 25vh;
-  width: 37vw;
+  height: 20vh;
+  width: 25vw;
   border-top-left-radius: var(--imagecurve);
   border-top-right-radius: var(--imagecurve);
+  z-index: 3;
+}
+@media (min-max) {
 }
