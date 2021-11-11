@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,11 +9,11 @@ body {
 }
 
 :root {
-  --shadowlightblueBG: hsl(224 100% 92%);
+  --shadowlightblueBG: hsl(224, 100%, 92%);
   --fontcolor: black;
-  --lightblueBG: hsl(225 100% 94%);
-  --colorButton: hsl(245 75% 52%);
-  --colorOrder: hsl(228 14% 57%);
+  --lightblueBG: hsl(225, 48%, 33%);
+  --colorButton: hsl(245, 75%, 52%);
+  --colorOrder: hsl(227, 29%, 71%);
   --hovercolorButton: hsl(245 83% 68%);
   --hovercolorOrder: hsl(224 16% 36%);
   --cardbackground: white;
@@ -23,6 +25,7 @@ section {
   width: 100vw;
   height: 100vh;
   position: relative;
+  font-family: "Red Hat Display";
 }
 .pattern {
   width: 100vw;
@@ -48,6 +51,14 @@ section {
   z-index: 2;
 }
 
+.plan-font-size {
+  font-size: 16px;
+}
+
+.small-font {
+  color: hsl(0, 0%, 60%);
+}
+
 .hero-img {
   display: grid;
   background-repeat: no-repeat;
@@ -57,5 +68,15 @@ section {
   border-top-right-radius: var(--imagecurve);
   z-index: 3;
 }
+.plan-container {
+  display: grid;
+  grid-template-columns: 0.125fr 1fr 0.25fr;
+  grid-template-rows: 0.5fr 0.5fr;
+}
+.grid-position {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 @media (min-max) {
 }
