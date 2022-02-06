@@ -16,8 +16,12 @@ body {
   --colorOrder: hsl(227, 29%, 71%);
   --hovercolorButton: hsl(245 83% 68%);
   --hovercolorOrder: hsl(224 16% 36%);
+<<<<<<< Updated upstream
   --cardbackground: white;
   --imagecurve: 15px;
+=======
+  --centertomiddle: translateX(-50em);
+>>>>>>> Stashed changes
 }
 
 section {
@@ -62,6 +66,7 @@ section {
 .hero-img {
   display: grid;
   background-repeat: no-repeat;
+<<<<<<< Updated upstream
   height: 20vh;
   width: 25vw;
   border-top-left-radius: var(--imagecurve);
@@ -79,4 +84,13 @@ section {
 }
 
 @media (min-max) {
+=======
+  height: 30vh;
+  transform: var(--centertomiddle);
+}
+
+.card {
+  transform: var(--centertomiddle);
+  position: relative;
+>>>>>>> Stashed changes
 }
